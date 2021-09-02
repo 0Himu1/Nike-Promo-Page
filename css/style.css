@@ -101,6 +101,10 @@ nav{
 	animation: slidex2 .7s ease;
 }
 
+.intro h3{
+	margin: 0;
+}
+
 .config{
 	position: absolute;
 	top: 0;
@@ -193,7 +197,9 @@ select:active{
 	border: 0;
 	margin-left: 30px;
 }
-
+.bg-img{
+	overflow: hidden;
+}
 .bg-img img{
 	position: absolute;
 	top: 50%;
@@ -234,7 +240,23 @@ select:active{
 	}
 }
 
-@media (max-width:769px){
+@media (max-width:1024px){
+	.nav-list ul li a {
+		font-size: 16px;
+	}
+	.bg-img img{
+		height: 380px;
+	}
+}
+
+
+
+
+@media (max-width:768px){
+
+	nav{
+		padding: 20px 0px;
+	}
 
 	h2{
 		font-size: 20px;
@@ -248,10 +270,14 @@ select:active{
 	.social-icon{
 		position: static;
 	}
+	.bg-img{
+		width: 100%;
+	}
 
 	.bg-img img{
 		transform: none;
-		height: 400px;
+		width: 100%;
+		height: auto;
 	}
 	.social-icon{
 		display: flex;
@@ -262,6 +288,7 @@ select:active{
 
 	.social-icon img{
 		margin-right: 10px;
+		margin-bottom: 0;
 
 	}
 
@@ -294,11 +321,50 @@ select:active{
 }
 
 
-@media (max-width:481px){
+@media (max-width:480px){
+
+	nav{
+		padding: 10px 0px;
+	}
+	.intro{
+		width: 100%;
+	}
+
+	.content{
+		width: 90%;
+	}
+	.bg-img{
+		width: 100%;
+	}
 	.bg-img img{
-		height: 250px;
+		width: 100%;
+		height: auto;
 		animation: none;
 	}
+	.config .colour,
+	.social-icon{
+		margin-top: 10px;
+	}
+
+	h1{
+		font-size: 36px;
+	}
+	h2{
+		font-size: 20px;
+	}
+
+	h3{
+		font-size: 16px;
+	}
+	p{
+		font-size: 12px;
+	}
+
+	.footer{
+		width: 90%;
+	}
+
+
 }
 
 
