@@ -293,9 +293,7 @@ select:active{
 	}
 
 	.footer{
-		position: static;
 		padding: 10px 15px;
-		transform: none;
 	}
 
 	.buttons{
