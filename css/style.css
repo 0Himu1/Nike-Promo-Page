@@ -339,7 +339,7 @@ select:active{
 	.bg-img img{
 		width: 100%;
 		height: auto;
-		animation: none;
+		animation: slidex1 .9s ease;
 	}
 	.config .colour,
 	.social-icon{
